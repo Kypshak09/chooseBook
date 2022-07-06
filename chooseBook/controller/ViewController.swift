@@ -27,6 +27,7 @@ class ViewController: UIViewController {
 
     @IBAction func makeChoice(_ sender: UIButton) {
         
+        change.checking(userAnswer: sender.currentTitle!)
         
         updateUI()
     }
