@@ -16,6 +16,8 @@
 		2593ED452875BF41001160AB /* chooseBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2593ED442875BF41001160AB /* chooseBookTests.swift */; };
 		2593ED4F2875BF41001160AB /* chooseBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2593ED4E2875BF41001160AB /* chooseBookUITests.swift */; };
 		2593ED512875BF41001160AB /* chooseBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2593ED502875BF41001160AB /* chooseBookUITestsLaunchTests.swift */; };
+		2593ED622875D1BA001160AB /* struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2593ED612875D1BA001160AB /* struct.swift */; };
+		2593ED642875D1C4001160AB /* brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2593ED632875D1C4001160AB /* brain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		2593ED4A2875BF41001160AB /* chooseBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chooseBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2593ED4E2875BF41001160AB /* chooseBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseBookUITests.swift; sourceTree = "<group>"; };
 		2593ED502875BF41001160AB /* chooseBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2593ED612875D1BA001160AB /* struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = struct.swift; sourceTree = "<group>"; };
+		2593ED632875D1C4001160AB /* brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,12 @@
 		2593ED2C2875BF3C001160AB /* chooseBook */ = {
 			isa = PBXGroup;
 			children = (
-				2593ED2D2875BF3C001160AB /* AppDelegate.swift */,
-				2593ED2F2875BF3C001160AB /* SceneDelegate.swift */,
-				2593ED312875BF3C001160AB /* ViewController.swift */,
-				2593ED332875BF3C001160AB /* Main.storyboard */,
+				2593ED5F2875D16D001160AB /* model */,
+				2593ED602875D173001160AB /* view */,
+				2593ED5E2875D166001160AB /* controller */,
 				2593ED362875BF40001160AB /* Assets.xcassets */,
 				2593ED382875BF40001160AB /* LaunchScreen.storyboard */,
+				2593ED5D2875D136001160AB /* others */,
 				2593ED3B2875BF40001160AB /* Info.plist */,
 			);
 			path = chooseBook;
@@ -125,6 +129,40 @@
 				2593ED502875BF41001160AB /* chooseBookUITestsLaunchTests.swift */,
 			);
 			path = chooseBookUITests;
+			sourceTree = "<group>";
+		};
+		2593ED5D2875D136001160AB /* others */ = {
+			isa = PBXGroup;
+			children = (
+				2593ED2D2875BF3C001160AB /* AppDelegate.swift */,
+				2593ED2F2875BF3C001160AB /* SceneDelegate.swift */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		2593ED5E2875D166001160AB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2593ED312875BF3C001160AB /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		2593ED5F2875D16D001160AB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2593ED612875D1BA001160AB /* struct.swift */,
+				2593ED632875D1C4001160AB /* brain.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2593ED602875D173001160AB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2593ED332875BF3C001160AB /* Main.storyboard */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2593ED622875D1BA001160AB /* struct.swift in Sources */,
 				2593ED322875BF3C001160AB /* ViewController.swift in Sources */,
 				2593ED2E2875BF3C001160AB /* AppDelegate.swift in Sources */,
+				2593ED642875D1C4001160AB /* brain.swift in Sources */,
 				2593ED302875BF3C001160AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
